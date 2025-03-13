@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 5%;
+    --foreground: 240 10% 97%;
+    --card: 240 10% 4%;
+    --card-foreground: 240 10% 97%;
+    --popover: 240 10% 4%;
+    --popover-foreground: 240 10% 97%;
+    --primary: 20 87% 65%;
+    --primary-foreground: 240 10% 3%;
+    --secondary: 12 84% 49%;
+    --secondary-foreground: 240 10% 97%;
+    --muted: 240 5% 25%;
+    --muted-foreground: 240 5% 65%;
+    --accent: 12 84% 49%;
+    --accent-foreground: 240 10% 97%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 240 10% 97%;
+    --border: 240 5% 15%;
+    --input: 240 5% 15%;
+    --ring: 12 84% 49%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 5%;
+    --foreground: 240 10% 97%;
+    --card: 240 10% 4%;
+    --card-foreground: 240 10% 97%;
+    --popover: 240 10% 4%;
+    --popover-foreground: 240 10% 97%;
+    --primary: 20 87% 65%;
+    --primary-foreground: 240 10% 3%;
+    --secondary: 12 84% 49%;
+    --secondary-foreground: 240 10% 97%;
+    --muted: 240 5% 25%;
+    --muted-foreground: 240 5% 65%;
+    --accent: 12 84% 49%;
+    --accent-foreground: 240 10% 97%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 240 10% 97%;
+    --border: 240 5% 15%;
+    --input: 240 5% 15%;
+    --ring: 12 84% 49%;
+  }
+}
+
+@font-face {
+  font-family: "Anton";
+  src: url("https://web-assets.same.dev/3367802268/3101860715.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("https://web-assets.same.dev/2996217424/2636924203.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .text-dotpro-headline {
+    font-family: "Anton", sans-serif;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+
+  .text-dotpro-body {
+    font-family: "Raleway", sans-serif;
+  }
+}
